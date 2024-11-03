@@ -6,7 +6,7 @@ import AddTaskForm from './components/AddTaskForm';
 
 function App() {
   const [tasks, setTasks] = useState([
-    {id:"task1", title: "Learn JS", status:1},
+    {id:"task1", title: "Learn JS", status:0},
     {id:"task2", title: "Code a todo list", status:0},
   ]);
 
@@ -53,7 +53,7 @@ function App() {
       setTaskStatus={setTaskStatus} 
       removeTask={removeTask} 
       setShowIncomplete={setShowIncomplete}/> 
-      
+
       <AddTaskForm newTask={newTask} 
       handleSubmit={handleSubmit} 
       handleInputChange={handleInputChange}/>
